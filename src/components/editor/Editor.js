@@ -35,7 +35,7 @@ export class Editor extends Component {
     };
 
     componentDidMount() {
-        import('quill').then((module) => {
+        import('@fangku/shadow-quill').then((module) => {
             if (module && module.default) {
                 this.quill = new module.default(this.editorElement, {
                     modules: {
